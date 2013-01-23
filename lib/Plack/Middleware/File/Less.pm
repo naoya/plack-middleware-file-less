@@ -4,6 +4,8 @@ package Plack::Middleware::File::Less;
 
 use strict;
 use warnings;
+use 5.008_001;
+our $VERSION = '0.02';
 
 use parent qw(Plack::Middleware);
 use Plack::Util;
@@ -103,5 +105,24 @@ the directory.
 =head1 SEE ALSO
 
 L<Plack::App::File> L<CSS::LESSp> L<http://lesscss.org/>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Naoya Ito <i.naoya@gmail.com>
+
+=item *
+
+Franck Cuny <https://github.com/franckcuny>
+
+=back
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
 
 =cut

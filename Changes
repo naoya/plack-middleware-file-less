@@ -1,0 +1,9 @@
+Revision history for Perl extension Plack::Middleware::File::Less
+
+0.02 2013-01-23 10:44:28 Naoya Ito <i.naoya@gmail.com>
+     - forked
+     - Use 'lessc' executable if installed.
+
+0.01
+    - original version by franckcuny
+      <https://github.com/franckcuny/plack-middleware-file-less>
