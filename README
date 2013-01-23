@@ -23,13 +23,22 @@ DESCRIPTION
     browsers. Otherwise, it falls back to the original *.css* file in the
     directory.
 
+LESS BACKENDS
+    If you have the "lessc" executable available in your PATH, this module
+    automatically uses the command to convert LESS into CSS. If the command
+    is not available and you have CSS::LESSp perl module available, it will
+    be used. Otherwise you'll get an exception during the initialization of
+    this middleware component.
+
 SEE ALSO
     Plack::App::File CSS::LESSp <http://lesscss.org/>
 
 AUTHORS
-    *   Naoya Ito <i.naoya@gmail.com>
+    *   Naoya Ito <lt>i.naoya@gmail.com<gt>
 
-    *   Franck Cuny <https://github.com/franckcuny>
+    *   Franck Cuny <lt>https://github.com/franckcuny<gt>
+
+    *   Tatsuhiko Miyagawa <lt>miyagawa@bulknews.net<gt>
 
 LICENSE
     This library is free software; you can redistribute it and/or modify it
