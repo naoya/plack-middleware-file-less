@@ -17,7 +17,7 @@ test_psgi $app, sub {
     $res = $cb->(GET "/foo.css");
     is $res->code, 200;
     is $res->content_type, 'text/css';
-    like $res->content, qr/color: #4D926F;/;
+    like $res->content, qr/color: #4D926F;/i;
 
     $res = $cb->(GET "/bar.css");
     is $res->code, 200;

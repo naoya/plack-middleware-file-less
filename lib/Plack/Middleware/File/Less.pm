@@ -7,7 +7,38 @@ use warnings;
 
 use parent qw(Plack::Middleware);
 use Plack::Util;
-use CSS::LESSp;
+use Plack::Util::Accessor qw(less);
+use IPC::Open3 qw(open3);
+use Carp;
+
+sub prepare_app {
+    my $self = shift;
+    $self->less(\&less_command);
+    my $less = `lessc -v`;
+    if ($less) {
+        $self->less(\&less_command);
+    } elsif (eval { require CSS::LESSp }) {
+        $self->less(\&less_perl);
+    } else {
+        Carp::croak("Can't find lessc command nor CSS::LESSp module");
+    }
+}
+
+sub less_command {
+    my $less = shift;
+    my $pid = open3(my $in, my $out, my $err, "lessc", "-");
+    print $in $less;
+    close $in;
+
+    my $buf = join '', <$out>;
+    waitpid $pid, 0;
+
+    return $buf;
+}
+
+sub less_perl {
+    return join "", CSS::LESSp->parse(shift);
+}
 
 sub call {
     my ($self, $env) = @_;
@@ -21,8 +52,8 @@ sub call {
         if ($res->[0] == 200) {
             my $less;
             Plack::Util::foreach($res->[2], sub { $less .= $_[0] });
-            my @css = CSS::LESSp->parse($less);
-            my $css = join("", @css);
+
+            my $css = $self->less->($less);
 
             my $h = Plack::Util::headers($res->[1]);
             $h->set('Content-Type'   => 'text/css');
