@@ -102,6 +102,14 @@ is found, a new CSS stylesheet is built on memory and served to the
 browsers.  Otherwise, it falls back to the original I<.css> file in
 the directory.
 
+=head1 LESS BACKENDS
+
+If you have the C<lessc> executable available in your PATH, this
+module automatically uses the command to convert LESS into CSS. If the
+command is not available and you have L<CSS::LESSp> perl module
+available, it will be used. Otherwise you'll get an exception during
+the initialization of this middleware component.
+
 =head1 SEE ALSO
 
 L<Plack::App::File> L<CSS::LESSp> L<http://lesscss.org/>
@@ -112,11 +120,15 @@ L<Plack::App::File> L<CSS::LESSp> L<http://lesscss.org/>
 
 =item *
 
-Naoya Ito <i.naoya@gmail.com>
+Naoya Ito <lt>i.naoya@gmail.com<gt>
 
 =item *
 
-Franck Cuny <https://github.com/franckcuny>
+Franck Cuny <lt>https://github.com/franckcuny<gt>
+
+=item *
+
+Tatsuhiko Miyagawa <lt>miyagawa@bulknews.net<gt>
 
 =back
 
