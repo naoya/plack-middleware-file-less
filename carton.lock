@@ -217,6 +217,466 @@
          "target" : "Class::Inspector",
          "version" : "1.28"
       },
+      "Devel::Cover" : {
+         "dist" : "Devel-Cover-1.01",
+         "mymeta" : {
+            "abstract" : "Code coverage metrics for Perl",
+            "author" : [
+               "Paul Johnson <paul@pjcj.net>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.130880, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Devel-Cover",
+            "no_index" : {
+               "directory" : [
+                  "tests",
+                  "t",
+                  "utils"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "0"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "0"
+                  }
+               },
+               "runtime" : {
+                  "recommends" : {
+                     "Browser::Open" : "0",
+                     "JSON::PP" : "0",
+                     "PPI::HTML" : "1.07",
+                     "Parallel::Iterator" : "0",
+                     "Perl::Tidy" : "20060719",
+                     "Pod::Coverage" : "0.06",
+                     "Pod::Coverage::CountParents" : "0",
+                     "Template" : "2.00",
+                     "Test::Differences" : "0",
+                     "perl" : "5.008002"
+                  },
+                  "requires" : {
+                     "Digest::MD5" : "0",
+                     "Storable" : "0",
+                     "Test::More" : "0",
+                     "Test::Warn" : "0"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "X_mailing_list" : "http://lists.perl.org/list/perl-qa.html",
+               "bugtracker" : {
+                  "web" : "https://github.com/pjcj/Devel--Cover/issues"
+               },
+               "homepage" : "http://www.pjcj.net/perl.html",
+               "license" : [
+                  "http://dev.perl.org/licenses"
+               ],
+               "repository" : {
+                  "url" : "http://github.com/pjcj/Devel--Cover"
+               }
+            },
+            "version" : "1.01",
+            "x_Dist_Zilla" : {
+               "perl" : {
+                  "version" : "5.016003"
+               },
+               "plugins" : [
+                  {
+                     "class" : "Dist::Zilla::Plugin::VersionFromScript",
+                     "name" : "VersionFromScript",
+                     "version" : "0.017"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Run::BeforeBuild",
+                     "name" : "Run::BeforeBuild",
+                     "version" : "0.018"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::GatherDir",
+                     "name" : "GatherDir",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::ManifestSkip",
+                     "name" : "ManifestSkip",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::ExecDir",
+                     "name" : "ExecDir",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::OurPkgVersion",
+                     "name" : "OurPkgVersion",
+                     "version" : "0.004000"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::PodVersion",
+                     "name" : "PodVersion",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::MetaYAML",
+                     "name" : "MetaYAML",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::MetaJSON",
+                     "name" : "MetaJSON",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::MetaConfig",
+                     "name" : "MetaConfig",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::MetaResources",
+                     "name" : "MetaResources",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::MetaNoIndex",
+                     "name" : "MetaNoIndex",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Manifest",
+                     "name" : "Manifest",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Prereqs",
+                     "config" : {
+                        "Dist::Zilla::Plugin::Prereqs" : {
+                           "phase" : "runtime",
+                           "type" : "requires"
+                        }
+                     },
+                     "name" : "Prereqs",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Prereqs",
+                     "config" : {
+                        "Dist::Zilla::Plugin::Prereqs" : {
+                           "phase" : "runtime",
+                           "type" : "recommends"
+                        }
+                     },
+                     "name" : "Recommends",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Prereqs",
+                     "config" : {
+                        "Dist::Zilla::Plugin::Prereqs" : {
+                           "phase" : "configure",
+                           "type" : "requires"
+                        }
+                     },
+                     "name" : "ConfigureRequires",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Prereqs",
+                     "config" : {
+                        "Dist::Zilla::Plugin::Prereqs" : {
+                           "phase" : "test",
+                           "type" : "requires"
+                        }
+                     },
+                     "name" : "TestRequires",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Prereqs",
+                     "config" : {
+                        "Dist::Zilla::Plugin::Prereqs" : {
+                           "phase" : "test",
+                           "type" : "recommends"
+                        }
+                     },
+                     "name" : "TestRecommends",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Run::Test",
+                     "name" : "Run::Test",
+                     "version" : "0.018"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Git::Check",
+                     "name" : "Git::Check",
+                     "version" : "2.012"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::NextRelease",
+                     "name" : "NextRelease",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Git::Commit",
+                     "name" : "Git::Commit",
+                     "version" : "2.012"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::Git::Tag",
+                     "name" : "Git::Tag",
+                     "version" : "2.012"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::TestRelease",
+                     "name" : "TestRelease",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::ConfirmRelease",
+                     "name" : "ConfirmRelease",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::UploadToCPAN",
+                     "name" : "UploadToCPAN",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::FinderCode",
+                     "name" : ":InstallModules",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::FinderCode",
+                     "name" : ":IncModules",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::FinderCode",
+                     "name" : ":TestFiles",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::FinderCode",
+                     "name" : ":ExecFiles",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::FinderCode",
+                     "name" : ":ShareFiles",
+                     "version" : "4.300032"
+                  },
+                  {
+                     "class" : "Dist::Zilla::Plugin::FinderCode",
+                     "name" : ":MainModule",
+                     "version" : "4.300032"
+                  }
+               ],
+               "zilla" : {
+                  "class" : "Dist::Zilla::Dist::Builder",
+                  "config" : {
+                     "is_trial" : "0"
+                  },
+                  "version" : "4.300032"
+               }
+            }
+         },
+         "name" : "Devel::Cover",
+         "pathname" : "P/PJ/PJCJ/Devel-Cover-1.01.tar.gz",
+         "provides" : {
+            "Devel::Cover" : {
+               "file" : "Devel/Cover.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Annotation::Git" : {
+               "file" : "Devel/Cover/Annotation/Git.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Annotation::Random" : {
+               "file" : "Devel/Cover/Annotation/Random.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Annotation::Svk" : {
+               "file" : "Devel/Cover/Annotation/Svk.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Branch" : {
+               "file" : "Devel/Cover/Branch.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Condition" : {
+               "file" : "Devel/Cover/Condition.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Condition_and_2" : {
+               "file" : "Devel/Cover/Condition_and_2.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Condition_and_3" : {
+               "file" : "Devel/Cover/Condition_and_3.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Condition_or_2" : {
+               "file" : "Devel/Cover/Condition_or_2.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Condition_or_3" : {
+               "file" : "Devel/Cover/Condition_or_3.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Condition_xor_4" : {
+               "file" : "Devel/Cover/Condition_xor_4.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Criterion" : {
+               "file" : "Devel/Cover/Criterion.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB" : {
+               "file" : "Devel/Cover/DB.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB::Criterion" : {
+               "file" : "Devel/Cover/Truth_Table.pm"
+            },
+            "Devel::Cover::DB::Digests" : {
+               "file" : "Devel/Cover/DB/Digests.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB::File" : {
+               "file" : "Devel/Cover/DB/File.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB::IO" : {
+               "file" : "Devel/Cover/DB/IO.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB::IO::JSON" : {
+               "file" : "Devel/Cover/DB/IO/JSON.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB::IO::Storable" : {
+               "file" : "Devel/Cover/DB/IO/Storable.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::DB::Run" : {
+               "file" : "Devel/Cover/DB.pm"
+            },
+            "Devel::Cover::DB::Structure" : {
+               "file" : "Devel/Cover/DB/Structure.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Html_Common" : {
+               "file" : "Devel/Cover/Html_Common.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Inc" : {
+               "file" : "Devel/Cover/Inc.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Op" : {
+               "file" : "Devel/Cover/Op.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Pod" : {
+               "file" : "Devel/Cover/Pod.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Compilation" : {
+               "file" : "Devel/Cover/Report/Compilation.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Html" : {
+               "file" : "Devel/Cover/Report/Html.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Html_basic" : {
+               "file" : "Devel/Cover/Report/Html_basic.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Html_basic::Template::Provider" : {
+               "file" : "Devel/Cover/Report/Html_basic.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Html_minimal" : {
+               "file" : "Devel/Cover/Report/Html_minimal.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Html_subtle" : {
+               "file" : "Devel/Cover/Report/Html_subtle.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Html_subtle::Template::Provider" : {
+               "file" : "Devel/Cover/Report/Html_subtle.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Sort" : {
+               "file" : "Devel/Cover/Report/Sort.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Text" : {
+               "file" : "Devel/Cover/Report/Text.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Text2" : {
+               "file" : "Devel/Cover/Report/Text2.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Vim" : {
+               "file" : "Devel/Cover/Report/Vim.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Report::Vim::Template::Provider" : {
+               "file" : "Devel/Cover/Report/Vim.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Statement" : {
+               "file" : "Devel/Cover/Statement.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Subroutine" : {
+               "file" : "Devel/Cover/Subroutine.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Test" : {
+               "file" : "Devel/Cover/Test.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Time" : {
+               "file" : "Devel/Cover/Time.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Truth_Table" : {
+               "file" : "Devel/Cover/Truth_Table.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Truth_Table::Row" : {
+               "file" : "Devel/Cover/Truth_Table.pm"
+            },
+            "Devel::Cover::Util" : {
+               "file" : "Devel/Cover/Util.pm",
+               "version" : "1.01"
+            },
+            "Devel::Cover::Web" : {
+               "file" : "Devel/Cover/Web.pm",
+               "version" : "1.01"
+            }
+         },
+         "target" : "Devel::Cover",
+         "version" : "1.01"
+      },
       "Devel::StackTrace" : {
          "dist" : "Devel-StackTrace-1.30",
          "mymeta" : {
@@ -2365,6 +2825,87 @@
          "target" : "Stream::Buffered",
          "version" : "0.02"
       },
+      "Sub::Uplevel" : {
+         "dist" : "Sub-Uplevel-0.24",
+         "mymeta" : {
+            "abstract" : "apparently run a function in a higher stack frame",
+            "author" : [
+               "Michael Schwern <mschwern@cpan.org>",
+               "David Golden <dagolden@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Dist::Zilla version 4.300005, CPAN::Meta::Converter version 2.112621, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Sub-Uplevel",
+            "no_index" : {
+               "directory" : [
+                  "t",
+                  "xt",
+                  "examples",
+                  "corpus"
+               ],
+               "package" : [
+                  "DB"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "Exporter" : "0",
+                     "File::Find" : "0",
+                     "File::Temp" : "0",
+                     "Test::More" : "0"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "6.30"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Carp" : "0",
+                     "constant" : "0",
+                     "strict" : "0",
+                     "warnings" : "0"
+                  }
+               }
+            },
+            "provides" : {
+               "Sub::Uplevel" : {
+                  "file" : "lib/Sub/Uplevel.pm",
+                  "version" : "0.24"
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Sub-Uplevel"
+               },
+               "homepage" : "https://github.com/dagolden/sub-uplevel",
+               "repository" : {
+                  "url" : "https://github.com/dagolden/sub-uplevel.git"
+               }
+            },
+            "version" : "0.24"
+         },
+         "name" : "Sub::Uplevel",
+         "pathname" : "D/DA/DAGOLDEN/Sub-Uplevel-0.24.tar.gz",
+         "provides" : {
+            "Sub::Uplevel" : {
+               "file" : "Sub/Uplevel.pm",
+               "version" : "0.24"
+            }
+         },
+         "target" : "Sub::Uplevel",
+         "version" : "0.24"
+      },
       "Test::Deep" : {
          "dist" : "Test-Deep-0.110",
          "mymeta" : {
@@ -2907,6 +3448,141 @@
          },
          "target" : "Test::Tester",
          "version" : "0.108"
+      },
+      "Test::Warn" : {
+         "dist" : "Test-Warn-0.24",
+         "mymeta" : {
+            "abstract" : "Perl extension to test methods for warnings",
+            "author" : [
+               "Alexandr Ciornii <alexchorny@gmail.com>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150, CPAN::Meta::Converter version 2.120921",
+            "keywords" : [
+               "testing",
+               "warnings"
+            ],
+            "license" : [
+               "perl_5"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Test-Warn",
+            "no_index" : {
+               "directory" : [
+                  "t",
+                  "inc"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "File::Spec" : "0",
+                     "Test::More" : "0"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "0"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "Carp" : "1.22",
+                     "Sub::Uplevel" : "0.12",
+                     "Test::Builder" : "0.13",
+                     "Test::Builder::Tester" : "1.02",
+                     "Tree::DAG_Node" : "1.02",
+                     "perl" : "5.006"
+                  }
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "repository" : {
+                  "url" : "http://github.com/chorny/test-warn/tree"
+               }
+            },
+            "version" : "0.24"
+         },
+         "name" : "Test::Warn",
+         "pathname" : "C/CH/CHORNY/Test-Warn-0.24.tar.gz",
+         "provides" : {
+            "Test::Warn" : {
+               "file" : "Test/Warn.pm",
+               "version" : "0.24"
+            },
+            "Test::Warn::Categorization" : {
+               "file" : "Test/Warn.pm"
+            },
+            "Test::Warn::DAG_Node_Tree" : {
+               "file" : "Test/Warn.pm"
+            }
+         },
+         "target" : "Test::Warn",
+         "version" : "0.24"
+      },
+      "Tree::DAG_Node" : {
+         "dist" : "Tree-DAG_Node-1.11",
+         "mymeta" : {
+            "abstract" : "An N-ary tree",
+            "author" : [
+               "Sean M. Burke <sburke@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+            "license" : [
+               "artistic_2"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Tree-DAG_Node",
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "Test::More" : "0.98"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "Module::Build" : "0.38"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {
+                     "strict" : "0",
+                     "warnings" : "0"
+                  }
+               }
+            },
+            "provides" : {
+               "Tree::DAG_Node" : {
+                  "file" : "lib/Tree/DAG_Node.pm",
+                  "version" : "1.11"
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "license" : [
+                  "http://www.perlfoundation.org/artistic_license_2_0"
+               ]
+            },
+            "version" : "1.11"
+         },
+         "name" : "Tree::DAG_Node",
+         "pathname" : "R/RS/RSAVAGE/Tree-DAG_Node-1.11.tgz",
+         "provides" : {
+            "Tree::DAG_Node" : {
+               "file" : "Tree/DAG_Node.pm",
+               "version" : "1.11"
+            }
+         },
+         "target" : "Tree::DAG_Node",
+         "version" : "1.11"
       },
       "Try::Tiny" : {
          "dist" : "Try-Tiny-0.12",
