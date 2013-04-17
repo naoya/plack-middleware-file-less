@@ -1,3 +1,5 @@
+local/
+.carton/
 MYMETA.json
 
 ### /Users/naoya/.gitignore-boilerplates/perl.gitignore
