@@ -75,6 +75,10 @@ sub call {
 
 1;
 
+=head1 NAME
+
+Plack::Middleware::File::Less - compile LESS templates into CSS stylesheets
+
 =head1 SYNOPSIS
 
   use Plack::App::File;
