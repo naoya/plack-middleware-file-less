@@ -1,3 +1,7 @@
+NAME
+    Plack::Middleware::File::Less - compile LESS templates into CSS
+    stylesheets
+
 SYNOPSIS
       use Plack::App::File;
       use Plack::Builder;
