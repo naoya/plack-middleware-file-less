@@ -1,3 +1,4 @@
+## runtime requirements
 requires 'Plack';
 requires 'CSS::LESSp';
 
@@ -16,4 +17,5 @@ on 'develop' => sub {
     requires 'Install::Module::ReadmeFromPod';
     requires 'Module::Install::CPANfile';
     requires 'Module::Install::Can';
+    requires 'CSS::LESSp';
 };
