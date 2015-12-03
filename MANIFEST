@@ -25,3 +25,4 @@ README
 t/bar.css
 t/foo.less
 t/less.t
+cpanfile
